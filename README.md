@@ -35,6 +35,7 @@ The original site contains some template text and older information. These have 
 
 ## Publication, CV and media updates
 
+- `content/home.json` contains the home-page introduction, academic profiles, and website contact email. Run `npm run home:update` after editing it.
 - `content/publications.json` contains the published papers and separately labelled manuscripts. Run `npm run content:update` after editing it.
 - `node scripts/build-public-cv.mjs /absolute/path/to/CV` builds the public download from the existing CV LaTeX source. It requires the source's `resume.cls` and a local LaTeX installation.
 - The website links to `site/documents/Yixuan-Song-CV.pdf`.
