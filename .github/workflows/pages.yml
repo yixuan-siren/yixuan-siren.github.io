@@ -1,0 +1,49 @@
+name: Deploy personal website
+
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'scripts/check.mjs', 'migration/manifest.json', 'migration-part-*.zip', 'package*.json', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Restore migration packages when present
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          if [[ ! -f site/index.html ]]; then
+            for package in migration-part-*.zip; do
+              unzip -o "$package" -x '.github/workflows/*'
+            done
+          fi
+      - run: npm ci --ignore-scripts
+      - run: npm run check
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
