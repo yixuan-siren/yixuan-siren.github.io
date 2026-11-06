@@ -37,7 +37,8 @@ The original site contains some template text and older information. These have 
 
 - `content/home.json` contains the home-page introduction, academic profiles, and website contact email. Run `npm run home:update` after editing it.
 - `content/publications.json` contains the published papers and separately labelled manuscripts. Run `npm run content:update` after editing it.
-- The home page shows the three most recent published papers whose `authorRoles` include `first` or `corresponding`. Record `publishedDate` as `YYYY-MM-DD` when adding a paper; entries without a full date use the publication year for ordering. The full Publications page retains every published paper.
+- The home page shows the three most recent published papers whose `authorRoles` include `first` or `corresponding`, followed by papers explicitly listed in `homepage.additionalDois` (currently the 2020 Physics of Fluids paper). Each selected paper needs a brief `homepageSummary`. Record `publishedDate` as `YYYY-MM-DD` when adding a paper; entries without a full date use the publication year for ordering. The full Publications page retains every published paper.
+- `content/about.json` holds the awards shown on About. Run `npm run about:update` after editing it.
 - `node scripts/build-public-cv.mjs /absolute/path/to/CV` builds the public download from the existing CV LaTeX source. It requires the source's `resume.cls` and a local LaTeX installation.
 - The website links to `site/documents/Yixuan-Song-CV.pdf`.
 - New private media goes in the local `素材库/01_原始素材/图片`, `视频`, or `文档` folders. Prepared web copies go in `素材库/02_网站版本/`. This library is ignored by Git; only explicitly selected website files are deployed.
