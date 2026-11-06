@@ -18,6 +18,8 @@ Open <http://127.0.0.1:4173/>. GitHub Actions validates and deploys `site/` when
 
 The first browser upload stores the source in three `migration-part-*.zip` packages. The read-only workflow extracts these into its temporary build directory and publishes `site/`; it cannot push back to the repository. The full, uncompressed working source is retained locally in this project. Once ordinary Git upload is authorized, the packages can be replaced with the uncompressed files; the same workflow supports both forms.
 
+`npm run package:source` automatically versions the shared CSS and JavaScript URLs from their contents, so a newly loaded page receives matching styles and interactions after deployment. Run `npm run assets:version` before checks when changing either shared file.
+
 ## Migration record
 
 - 13 routes: home, About, Publications, Research Blog, one blog article, one category, two tags, Portfolio and four project detail pages.
