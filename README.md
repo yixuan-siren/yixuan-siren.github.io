@@ -27,7 +27,7 @@ The first browser upload stores the source in three `migration-part-*.zip` packa
 - Navigation, contact anchors, image enlargement, portfolio navigation, blog search and share controls use the small local script.
 - Existing Wix placeholder publication links were replaced with their displayed DOI destinations. The home page's template LinkedIn destination was replaced with the profile already used in the original footer.
 - The contact form opens the visitor's email application. It does not send or store messages on the website. Its button and explanation state this clearly.
-- Five unavailable Disaggregation tank videos retain their cover images with “Video coming soon,” as requested. Their identifiers are in `migration/deferred-media.json`; add the original MP4s when available.
+- Five Disaggregation tank videos were recovered from Wix and restored to the portfolio. The original migration record remains in `migration/deferred-media.json`.
 - The initial migration retained the original content. On November 2, 2026, the publication page and home-page selections were updated from the current CV, with DOI-verified title and citation corrections. The public CV excludes the personal phone, references, and grants/funding; the master CV remains unchanged.
 - The Wix advertising banner and hosting attribution are removed; the original site remains available at Wix.
 
@@ -43,4 +43,4 @@ The original site contains some template text and older information. These have 
 - `content/about.json` holds the awards shown on About. Run `npm run about:update` after editing it.
 - `node scripts/build-public-cv.mjs /absolute/path/to/CV` builds the public download from the existing CV LaTeX source. It requires the source's `resume.cls` and a local LaTeX installation.
 - The website links to `site/documents/Yixuan-Song-CV.pdf`.
-- New private media goes in the local `素材库/01_原始素材/图片`, `视频`, or `文档` folders. Prepared web copies go in `素材库/02_网站版本/`. This library is ignored by Git; only explicitly selected website files are deployed.
+- Private Portfolio materials are organized in `~/Documents/personal website/素材库/Portfolio/` under `文档`, `照片`, and `视频`. The library also retains the existing `01_原始素材` and `02_网站版本` folders. It is outside the website repository; only explicitly selected website files are deployed.
