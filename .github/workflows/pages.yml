@@ -3,7 +3,7 @@ name: Deploy personal website
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'scripts/check.mjs', 'migration/manifest.json', 'migration-part-*.zip', 'package*.json', '.github/workflows/pages.yml']
+    paths: ['site/**', 'content/managed/**', 'website-content-manager.zip', 'scripts/check.mjs', 'scripts/build-managed-content.mjs', 'migration/manifest.json', 'migration-part-*.zip', 'package*.json', '.github/workflows/pages.yml']
   workflow_dispatch:
 
 permissions:
@@ -24,11 +24,15 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           if [[ ! -f site/index.html ]]; then
+            restored=$(mktemp -d)
             for package in migration-part-*.zip; do
-              unzip -o "$package" -x '.github/workflows/*'
+              unzip -oq "$package" -d "$restored" -x '.github/workflows/*'
             done
+            unzip -oq website-content-manager.zip -d "$restored"
+            cp -Rn "$restored"/. .
           fi
       - run: npm ci --ignore-scripts
+      - run: node scripts/build-managed-content.mjs
       - run: npm run check
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
