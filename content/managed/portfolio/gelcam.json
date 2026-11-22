@@ -1,37 +1,36 @@
 {
   "slug": "gelcam",
-  "title": "GelCam：A Gel-Based Imaging Sediment Trap",
+  "title": "GelCam: A Gel-Based Imaging Sediment Trap",
   "date": "2026-11-21",
-  "lang": "zh-Hans",
-  "summary": "GelCam 将凝胶沉积物捕获器与延时成像结合，用于观测下沉颗粒及其碳通量。",
+  "summary": "GelCam combines a gel-based sediment trap with time-lapse imaging to observe sinking particles and estimate their carbon flux.",
   "cover": "gelcam-schematic.webp",
   "coverAlt": "GelCam schematic showing the sediment trap tube, gel layer, LED ring, and upward-facing camera",
   "body": [
-    {"type": "heading", "text": "1. 工作原理"},
+    {"type": "heading", "text": "1. How it works"},
     {
       "type": "list",
       "ordered": true,
       "items": [
-        {"label": "捕获颗粒", "text": "海洋中的下沉颗粒进入沉积物捕获管，最终沉降至底部的透明凝胶层。"},
-        {"label": "保存颗粒", "text": "凝胶固定颗粒，尽可能保留其形态，使后续成像和样品分析成为可能。"},
-        {"label": "连续成像", "text": "位于凝胶层下方的向上拍摄相机，配合 LED 照明，定时记录新进入的颗粒。"},
-        {"label": "定量分析", "text": "通过图像处理识别、跟踪和分类颗粒，估算颗粒到达速率、粒径分布及碳通量。"}
+        {"label": "Capture particles.", "text": "Sinking particles enter the sediment trap tube and settle into a clear gel layer at the bottom."},
+        {"label": "Preserve particle shape.", "text": "The gel holds particles in place and helps preserve their shape for imaging and later sample analysis."},
+        {"label": "Record time-lapse images.", "text": "An upward-facing camera beneath the gel and an LED ring record newly arrived particles at regular intervals."},
+        {"label": "Quantify what arrives.", "text": "Image analysis identifies, tracks, and classifies particles to estimate arrival rates, particle-size distributions, and carbon flux."}
       ]
     },
-    {"type": "image", "file": "gelcam-schematic.webp", "alt": "GelCam 剖面图标出了捕获管、透明凝胶层、LED 环和向上拍摄的相机。", "caption": "GelCam 的结构和成像组件。"},
-    {"type": "heading", "text": "GelCam 能够提供三个层次的信息"},
+    {"type": "image", "file": "gelcam-schematic.webp", "alt": "GelCam cutaway showing the trap tube, clear gel layer, LED ring, and upward-facing camera", "caption": "GelCam’s sediment trap and imaging components."},
+    {"type": "heading", "text": "What GelCam measures"},
     {
       "type": "list",
       "items": [
-        {"label": "When:", "text": "颗粒何时到达，通量是否存在昼夜变化或短时事件。"},
-        {"label": "What:", "text": "到达颗粒的大小、形态和类型，例如 marine aggregates 和 fecal pellets。"},
-        {"label": "How much:", "text": "根据颗粒图像及经验碳含量关系，估算颗粒有机碳通量（POC flux），并与传统 sediment trap 测量验证。"}
+        {"label": "When:", "text": "When particles arrive and whether flux varies between day and night or during short-lived events."},
+        {"label": "What:", "text": "The size, shape, and type of arriving particles, including marine aggregates and fecal pellets."},
+        {"label": "How much:", "text": "Particulate organic carbon (POC) flux estimated from particle images and empirical carbon-content relationships. Conventional sediment trap measurements provide a check on these estimates."}
       ]
     },
-    {"type": "image", "file": "gelcam-particle-classification.webp", "alt": "GelCam 拍摄的六类颗粒，包括海洋聚集体、多种粪粒、致密碎屑和根足类生物。", "caption": "GelCam 图像中不同颗粒类型的实例。"},
-    {"type": "image", "file": "gelcam-figure-3.webp", "alt": "彩色轨迹标出凝胶层中若干颗粒的位置变化，右侧显示同一颗粒在不同时间的图像。", "caption": "颗粒追踪示例。右侧为一个颗粒的延时图像序列。"},
-    {"type": "heading", "text": "EXPORTS 2018 延时视频"},
-    {"type": "video", "file": "gelcam-exports-2018-epoch-2.mp4", "poster": "gelcam-exports-2018-epoch-2-poster.webp", "label": "EXPORTS 2018 Epoch 2 GelCam 延时视频", "caption": "EXPORTS 2018 · Epoch 2 · STT1"},
-    {"type": "video", "file": "gelcam-exports-2018-epoch-3.mp4", "poster": "gelcam-exports-2018-epoch-3-poster.webp", "label": "EXPORTS 2018 Epoch 3 GelCam 延时视频", "caption": "EXPORTS 2018 · Epoch 3 · STT1"}
+    {"type": "image", "file": "gelcam-particle-classification.webp", "alt": "Six groups of particles imaged by GelCam, including aggregates, fecal pellets, dense detritus, and rhizarians", "caption": "Examples of particle types in GelCam images."},
+    {"type": "image", "file": "gelcam-figure-3.webp", "alt": "Colored tracks mark changes in particle position on the gel, with time-stamped close-ups of one particle at right", "caption": "Examples of particle tracking. The panels on the right show one particle over time."},
+    {"type": "heading", "text": "EXPORTS 2018 time-lapse videos"},
+    {"type": "video", "file": "gelcam-exports-2018-epoch-2.mp4", "poster": "gelcam-exports-2018-epoch-2-poster.webp", "label": "EXPORTS 2018 Epoch 2 GelCam time-lapse", "caption": "EXPORTS 2018 · Epoch 2 · STT1"},
+    {"type": "video", "file": "gelcam-exports-2018-epoch-3.mp4", "poster": "gelcam-exports-2018-epoch-3-poster.webp", "label": "EXPORTS 2018 Epoch 3 GelCam time-lapse", "caption": "EXPORTS 2018 · Epoch 3 · STT1"}
   ]
 }

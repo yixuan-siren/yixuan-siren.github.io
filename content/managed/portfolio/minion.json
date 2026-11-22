@@ -1,0 +1,28 @@
+{
+  "slug": "minion",
+  "title": "MINION: A Low-Cost Autonomous Lagrangian Platform for Ocean Observations",
+  "date": "2026-11-21",
+  "summary": "MINION is a compact, autonomous float that collects ocean observations as it drifts with the surrounding water.",
+  "cover": "minion-underwater-cover.webp",
+  "coverAlt": "MINION underwater with a squid beside the float",
+  "body": [
+    {"type": "heading", "text": "Three core features"},
+    {
+      "type": "list",
+      "items": [
+        {"label": "Low-cost:", "text": "The float is compact and inexpensive, making it practical to deploy multiple units."},
+        {"label": "Autonomous:", "text": "MINION integrates multiple sensors, data acquisition, and communications and operates autonomously."},
+        {"label": "Lagrangian:", "text": "MINION drifts with the surrounding water and makes observations along its path."}
+      ]
+    },
+    {"type": "heading", "text": "Design and assembly"},
+    {"type": "image", "file": "minion-5-cad.webp", "alt": "CAD rendering of MINION 5 showing its transparent housing and the top of the instrument", "caption": "CAD rendering of MINION 5."},
+    {"type": "image", "file": "minion-4-assemblies.webp", "alt": "A row of MINION 4 assemblies showing their wiring and circuit boards", "caption": "MINION 4 assemblies with their glass housings removed."},
+    {"type": "image", "file": "minion-bench-assembly.webp", "alt": "A person working on wiring beside several MINION assemblies on a laboratory bench", "caption": "Assembling MINION floats in the laboratory."},
+    {"type": "heading", "text": "In the water"},
+    {"type": "image", "file": "minion-4-at-surface.webp", "alt": "Two MINION 4 floats with yellow bands at the water surface", "caption": "Two MINION 4 floats at the surface."},
+    {"type": "image", "file": "minion-at-sea.webp", "alt": "A MINION float held over the water beside a boat", "caption": "MINION alongside a boat at sea."},
+    {"type": "video", "file": "minion-ame.mp4", "poster": "minion-ame-poster.webp", "label": "MINION particle imaging time-lapse", "caption": "Time-lapse images of particles in the instrument’s field of view."},
+    {"type": "video", "file": "minion-hovering.mp4", "poster": "minion-hovering-poster.webp", "label": "Underwater footage of MINION", "caption": "MINION underwater, with squid passing nearby. Footage by MBARI."}
+  ]
+}
