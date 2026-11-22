@@ -1,0 +1,23 @@
+{
+  "slug": "mbari-field-deployment",
+  "title": "A Field Deployment at MBARI",
+  "date": "2024-07",
+  "category": "research",
+  "summary": "A July 2024 field deployment brought me to MBARI in Moss Landing, where I learned to tie knots and ended up at the Monterey Bay Aquarium.",
+  "cover": "mbari-deployment-deck.webp",
+  "coverAlt": "A MINION float mounted on a yellow frame on the deck of a boat",
+  "body": [
+    {"type": "paragraph", "text": "In July 2024, I went to the Monterey Bay Aquarium Research Institute (MBARI) for a field deployment. It was my first time working with so many oceanographers at once. I quickly realized how much I still had to learn, and I got a little flustered. Melissa spent quite a while teaching me how to tie knots. I was grateful she took the time."},
+    {"type": "image", "file": "mbari-deployment-deck.webp", "alt": "A MINION float mounted on a yellow frame on the deck of a boat", "caption": "A MINION float on deck during the deployment trip."},
+    {"type": "heading", "text": "The test tank"},
+    {"type": "paragraph", "text": "MBARI struck me as a wonderful place to work. One thing that stuck with me was the indoor seawater test tank, which is 10 meters deep. I can imagine how much fun it would be to have a tank like that on hand when building an ocean instrument."},
+    {"type": "image", "file": "mbari-seawater-test-tank.webp", "alt": "An indoor seawater test tank with yellow railings along one side", "caption": "MBARI’s 10-meter-deep seawater test tank."},
+    {"type": "image", "file": "mbari-instrument-in-tank.webp", "alt": "A MINION float suspended underwater in front of the tank’s viewing windows", "caption": "A MINION float seen through a window in the test tank."},
+    {"type": "link", "text": "More about MBARI’s test tank", "url": "https://synchro.mbari.org/mbari/"},
+    {"type": "image", "file": "mbari-wall-notes.webp", "alt": "A penguin cartoon, a quote about computers, and a bioluminescence sticker", "caption": "A few things that caught my eye at MBARI."},
+    {"type": "heading", "text": "Moss Landing and Monterey"},
+    {"type": "paragraph", "text": "MBARI is in Moss Landing, which felt like a peculiar little corner of sunny California. It seemed to be overcast almost the whole time I was there. I’ll leave you to look up why."},
+    {"type": "paragraph", "text": "About half an hour away in Monterey is the Monterey Bay Aquarium, which I loved. I was really into Dave the Diver at the time, and I came away with a hunch that its developers must be regulars there. I also loved this sea otter bag."},
+    {"type": "image", "file": "monterey-sea-otter-bag.webp", "alt": "A canvas shoulder bag illustrated with floating sea otters", "caption": "The sea otter bag I couldn’t stop looking at."}
+  ]
+}
