@@ -1,0 +1,33 @@
+{
+  "slug": "a-pirate-eyepatch-for-minion",
+  "title": "A Pirate Eyepatch for MINION?",
+  "date": "2026-11-23",
+  "category": "fun",
+  "summary": "Trying to spot an eight-centimeter float at dusk on EN733 got us talking about pirate eyepatches.",
+  "cover": "minion-at-surface.jpg",
+  "coverAlt": "Two bright yellow MINION floats sitting low in the water.",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Around midnight, while I was getting my kid back to sleep, I found myself thinking about pirate eyepatches. We'd talked about them on the EN733 research cruise, of all places, while trying to spot a MINION at dusk."
+    },
+    {
+      "type": "paragraph",
+      "text": "We had its GPS coordinates, so we brought the ship over to the reported position. Even there, it was hard to pick out a drifting float only eight centimeters across. It had flashing strobes and bright, reflective surfaces to make it easier to see. From a ship at dusk, eight centimeters is still awfully small."
+    },
+    {
+      "type": "image",
+      "file": "minion-at-surface.jpg",
+      "alt": "Two MINION floats with bright yellow reflective surfaces and clear domes at the waterline.",
+      "caption": "Two MINIONs at the surface, seen up close."
+    },
+    {
+      "type": "paragraph",
+      "text": "That's how we got onto pirate captains. In the movies, I always took the eyepatch to mean the captain had lost an eye in a fight. The explanation I heard on EN733 was that a patch could keep one eye used to the dark. Lift it when you step into a dim part of the ship, and the covered eye can already pick out details while the other is still adjusting."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keeping light out of one eye can help it stay adapted to the dark, though there's little historical evidence that pirates actually wore patches for that reason. Would it have helped us spot the MINION? I don't know, but after staring at all that water, an eyepatch sounded like a pretty good addition to the recovery kit."
+    }
+  ]
+}
